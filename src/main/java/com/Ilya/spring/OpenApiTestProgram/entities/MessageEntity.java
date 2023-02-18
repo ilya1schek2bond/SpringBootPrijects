@@ -2,17 +2,17 @@ package com.Ilya.spring.OpenApiTestProgram.entities;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 //import javax.persistence.*;
 
-@Data
+
 @Entity
 @Table(name = "Messages")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class MessageEntity {
 
     @Id
