@@ -57,11 +57,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>javax.persistence</groupId>-->
-<!--			<artifactId>javax.persistence-api</artifactId>-->
-<!--			<version>2.2</version>-->
-<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -73,7 +68,24 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>5.1.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -96,16 +108,8 @@
 				</executions-->
 			<configuration>
 				<driver>org.postgresql.Driver</driver>
-				<url>jdbc:postgresql://localhost:5432/messagesdb</url>
-				<user>Ilyaschekotikhin</user>
-				<password></password>
 				<baselineOnMigrate>true</baselineOnMigrate>
 				<schemas>public</schemas>
-				<locations>
-					<location>
-						filesystem:src/main/resources/db/migration
-					</location>
-				</locations>
 			</configuration>
 		</plugin>
 		</plugins>
