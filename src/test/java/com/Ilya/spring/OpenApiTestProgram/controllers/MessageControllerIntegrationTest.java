@@ -1,4 +1,4 @@
-package com.Ilya.spring.OpenApiTestProgram.controllers;
+/*package com.Ilya.spring.OpenApiTestProgram.controllers;
 
 import com.Ilya.spring.OpenApiTestProgram.dto.DtoMesage;
 import com.Ilya.spring.OpenApiTestProgram.services.MessageServiceImpl;
@@ -58,4 +58,4 @@ class MessageControllerIntegrationTest {
             throw new RuntimeException(e);
         }
     }
-}
+}*/

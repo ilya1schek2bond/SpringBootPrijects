@@ -26,7 +26,7 @@ public class MessageController {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @PostMapping
+    @PostMapping("/post")
     public ResponseEntity<String> postData(@RequestBody DtoMesage dtoMesage) throws Exception {
         try {
             messageServiceImpl.saveMessage(dtoMesage);
